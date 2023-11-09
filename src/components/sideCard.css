@@ -1,0 +1,42 @@
+.img-container{
+    position: relative;
+}
+.side-main-container{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.username-profile{
+    position: absolute;
+    bottom: 0;
+    background-image: url('/card-profile-background.svg');
+    /* left: 14px; */
+    padding-left: 14px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.username-profile-inner{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.username-name{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+.active-profile{
+  position: relative;
+}
+.active-green{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #0EC297;
+    border-radius: 50%;
+    border: 2px solid white;
+    top:0;
+    right: 0;
+}

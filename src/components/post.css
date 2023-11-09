@@ -1,0 +1,61 @@
+.post-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  padding: 30px;
+  background-color: white;
+}
+.post-main-container-item {
+  width: 100%;
+}
+.post-main-container-item1 {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-main-container-item1 div div .profile-name {
+  font: normal normal 600 20px/24px Gilroy;
+  color: #101010;
+}
+.post-main-container-item1 div div .username {
+  font: normal normal medium 14px/16px Gilroy;
+  color: #8d8d8d;
+}
+.post-main-container-item2{
+ /* box-shadow: 0 2px 5px 2px #888; */
+ border-bottom: 2px solid #F3F3F3;
+
+}
+.post-image-container {
+  position: relative;
+}
+
+.like-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* transform: translate(-50%, -50%); */
+  padding: 25px;
+}
+
+.post-main-container-item2 div span a {
+  text-decoration: none;
+  color: #ff5e8a;
+  font: normal normal medium 14px/21px Gilroy;
+}
+.post-main-container-item2 div {
+  color: #101010;
+  font: normal normal medium 14px/21px Gilroy;
+  text-align: left;
+  margin: 30px 0;
+}
+.post-main-container-item3{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
