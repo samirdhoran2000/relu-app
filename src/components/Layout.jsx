@@ -1,9 +1,23 @@
 import "./layout.css";
 import Post from './Post';
+import {useNavigate} from 'react-router-dom'
 import Posts,{SideData,BottomCardData} from '../Constant/data'
 import SideCard from './SideCard';
 import BottomCard from "./BottomCard";
+import { useEffect } from "react";
 const Layout = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    console.log("componet mount ");
+    return () => {
+      console.log("component will unmount :");
+      localStorage.clear();
+      navigate('/');
+    };
+  }, []);
+  const logout = () => {
+    navigate("/")
+  }
   return (
     <div className="grid-container">
       <div className="grid-item logo-container">
@@ -107,7 +121,9 @@ const Layout = () => {
               width: "100px",
             }}
           >
-            <div className="nav-inner other">
+            <div className="nav-inner other" onClick={() => {
+              logout();
+            }}>
               <img src="/logout.svg" alt="logout logo" className="home-svg" />
               <p
                 className="nav-name-para"

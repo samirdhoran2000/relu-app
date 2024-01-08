@@ -17,8 +17,11 @@ const SignIn = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((data) => {
         console.log("res data", data);
+        if (data) {
+          // localStorage.setItem('token',data._UserCredentialImpl?._tokenResponse)
+          navigate('/post')
+        }
         // alert("Sign in Successful!!! ");
-        navigate('/post')
       })
       .catch((err) => {
         console.log("something went wrong ", err);
